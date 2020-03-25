@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Memory Game</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" />
+        <script src="https://kit.fontawesome.com/8013c9a5df.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>Memory Game Cars </h1>
+        <section class="score-panel" id="popup">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+<p id="h"></p>
+        	<span class="moves">0</span> Move(s)
+
+            <div class="timer">
+            </div>
+
+            <div class="restart" onClick = "window.location.reload(true)">
+        		<i class="fa fa-repeat"></i>
+        	</div>
+        </section>
+        <table></table>
+
+        
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Congratulations <i class="fas fa-laugh-wink"></i></h2>
+                <div class="content-1">
+                    Congratulations you're a winner <i class="fas fa-thumbs-up"></i>
+                </div>
+                <div class="content-2">
+                    <p>You made <span id=finalMove> </span> moves </p>
+                    <p>in <span id=totalTime> </span> </p>
+                    <p>Rating:  <span id=starRating></span></p>
+                </div>
+                <button id="play-again" onClick="window.location.reload(true)">
+                    Play again <i class="fas fa-retweet"></i></a>
+                </button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

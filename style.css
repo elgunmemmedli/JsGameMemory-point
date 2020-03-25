@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  'Cinzel', serif;
+    font-size: 30px;
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+    border: 32px solid gray;
+}
+td{
+    width: 150px;
+    height: 150px !important;
+    text-align: center;
+    background-color: rgb(218, 212, 212);
+   border: 10px solid gray;
+}
+td img{
+    width: 100px;
+    height: 100px !important;
+    cursor: pointer;
+    position: relative;
+    transform: rotateY(0);
+	cursor: default;
+	animation-name: imgmove;
+	animation-duration: 1s;
+}
+
+@keyframes imgmove {
+	from {
+		transform: perspective(0px) rotate3d(0, 0, 0, 0deg);
+	}
+
+
+	to {
+		transform: perspective(0px);
+    }
+}
+@keyframes mynewmove {
+    from {
+		transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+		animation-timing-function: ease-in;
+		opacity: 0;
+	}
+    to {
+		transform: perspective(400px);
+	}
+  }
+  @keyframes my {
+    from {
+		transform: perspective(400px) scale(0,0);
+	}
+    to {
+		transform: perspective(400px);
+	}
+  }
+
+  @keyframes mynew1 {
+    from {
+		transform: perspective(400px) scale(1.5,1.5);
+	}
+    to {
+		transform: perspective(400px);
+	}
+  }
+
+  @keyframes mynew2 {
+    from {
+		transform: perspective(400px) scale(0.5,0.5);
+	}
+    to {
+		transform: perspective(400px);
+	}
+  }
+h1{ 
+    text-align: center;
+    font-size: 32px;
+}
+.score-panel{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.stars li{
+    list-style: none;
+    display: inline;
+}
+.moves{
+    margin-left: 30px;
+   font-size: 30px;
+}
+.fa-star{
+    font-size: 30px !important;
+}
+.timer{
+    margin-left: 30px;
+}
+.restart{
+    margin-left: 30px;
+}
+#popup1{
+    margin-top: 50px;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+}
+#starRating li{
+    display: inline;
+    list-style: none;
+}
+.popup i{
+    color: #FFD700;
+    font-size: 38px;
+}
+button{
+    padding: 15px 10px;
+    background-color: none;
+    font: 700 30px 'Permanent Marker', cursive;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
